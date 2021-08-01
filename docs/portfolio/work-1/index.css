@@ -1,0 +1,245 @@
+/* 스크롤바 커스텀 Customize website's scrollbar like Mac OS
+Not supports in Firefox and IE */
+
+/* total width */
+body::-webkit-scrollbar {
+  background-color: #fff;
+  width: 16px;
+}
+
+/* background of the scrollbar except button or resizer */
+body::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+  border: 4px solid #fff;
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {
+  display: none;
+}
+
+body {
+  height: 10000px;
+  margin: 0;
+}
+
+/* 커스텀 */
+html {
+  overflow-x: hidden;
+}
+
+.site-wrap {
+  width: 1920px;
+  position: relative;
+}
+
+/* section-1*/
+.section-1__item-1 {
+  bottom: 15%;
+  left: 6%;
+}
+
+.section-1__item-2 {
+  top: 40%;
+  right: 15%;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 6s, visibility 6s;
+}
+
+.section-1__item-3 {
+  top: 0;
+  right: 0;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1.5s, visibility 1.5s;
+}
+
+.section-1__item-2.active,
+.section-1__item-3.active {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* section-2*/
+.section-2__item {
+  bottom: 8%;
+  left:13%;
+}
+
+/* section-3*/
+.section-3__item {
+  bottom: 25%;
+  left: 24%;
+}
+
+/* section-4*/
+.section-4__item-1,
+.section-4__item-2 {
+  left: 16%;
+  top: 27%;
+}
+
+.section-4__item-2 {
+  top: 80%;
+}
+
+/* section-5*/
+.section-5__item-1,
+.section-5__item-2 {
+  left: 360px;
+  top: 34%;
+}
+
+.section-5__item-2 {
+  top: 67%;
+}
+
+/* section-6*/
+.section-6__item {
+  left: 18%;
+  bottom: 10%;
+}
+
+/* section-7*/
+.section-7__title {
+  top: 33%;
+  left: 12%;
+}
+
+.section-7__item-1 {
+  bottom: 324px;
+  left: 378px;
+}
+
+.section-7__item-2 {
+  bottom: 338px;
+  left: 800px;
+}
+
+.section-7__item-3 {
+  bottom: 338px;
+  left: 1170px;
+}
+
+/* section-8*/
+.section-8__item-1 {
+  top: 0;
+  left: 17%;
+}
+
+.section-8__item-2 {
+  top: 480px;
+  right: 100px;
+  animation: rotate1 1.5s none infinite alternate;
+}
+
+
+@keyframes rotate1 {
+  0% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+.section-8__item-3 {
+  top: 950px;
+  left: 0;
+  animation: rotate2 1s none infinite alternate;
+}
+
+@keyframes rotate2 {
+  0% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+/* section-9*/
+.section-9__bg-item {
+  top: 424px;
+  left: 1120px;
+}
+
+.section-9__item-1 {
+  top: 424px;
+  left: 600px;
+}
+
+.section-9__item-2 {
+  top: 424px;
+  left: 1320px;
+}
+
+.section-9__item-3 {
+  top: 511px;
+  left: 489px;
+  animation: scale .8s none infinite alternate;
+}
+
+.section-9__item-4 {
+  top: 498px;
+  left: 1335px;
+  animation: scale .8s none infinite alternate;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+/* section-10*/
+.section-10__item-1 {
+  top: 600px;
+  right: 730px;
+  animation: scale 1.2s none infinite alternate;
+}
+
+.section-10__item-2 {
+  bottom: 955px;
+  left: 670px;
+}
+
+.section-10__item-3 {
+  bottom: 955px;
+  left: 1030px;
+}
+
+.section-10__item-4 {
+  width: 280px;
+  top:1508px;
+  position: absolute;
+  left:1050px;
+}
+
+/* section-11*/
+.section-11__item-1 {
+  top: 30px;
+  left: -180px;
+}
+
+.section-11__item-2 {
+  top: 250px;
+  right: 600px;
+  animation: heart 1s none infinite alternate;
+}
+
+@keyframes heart {
+  0% {
+    top:180px
+  }
+}
